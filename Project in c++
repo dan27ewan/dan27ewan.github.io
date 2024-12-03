@@ -1,0 +1,288 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    string birthday, course, school, raining;
+    string name = " Daniel Teoxon ";
+    int choice, num, num1, num2, age, x, y;
+    int a = 10;
+    int sum = 0;
+    float temperature;
+    
+    cout << "\"FINAl EXAM\"" << endl;
+    cout << "Choose an option:" << endl;
+    cout << "1. Bio Data" << endl;
+    cout << "2. Simple Calculator" << endl;
+    cout << "3. Bitwise Calculator" << endl;
+    cout << "4. Conditional Control Structures (Enter a score 0-100)" << endl;
+    cout << "5. Number Classification (Positive and negative)" << endl;
+    cout << "6. Nested If" << endl;
+    cout << "7. Switch Statement (1st and 2nd Activity)" << endl;
+    cout << "8. While loop 1" << endl;
+    cout << "9. While loop 2" << endl;
+    cout << "10. For Loop" << endl;
+    cout << "11. Do While " << endl;
+    
+    cout << "Enter your choice: " << endl;
+    
+    cin >> choice;
+    cin.ignore();
+    
+    switch (choice) {
+    
+        case 1:
+            cout << "\"Bio Data\""<< endl;
+            cout << "Enter your name:" << endl;
+            getline (cin, name);
+            cout << "Enter your age:" << endl;
+            cin >> age;
+            cin.ignore();
+            cout << "Enter your birthday:" << endl;
+            getline (cin, birthday);
+            cout << "Enter your course:" << endl;
+            getline (cin, course);
+            cout << "Enter your school:" << endl;
+            getline (cin, school);
+        
+            cout << "\n\"Your Information\"\n" << endl;
+            cout << "name:" << name << endl;
+            cout << "age:" << age << endl;
+            cout << "birthday:" << birthday << endl;
+            cout << "course:" << course<< endl;
+            cout << "school:" << school << endl;
+            break;
+        
+        case 2:
+            cout << "\"Simple Calculator\"" << endl;
+            cout << "Enter the first number:";
+            cin >> num1;
+            cout << "Enter the second number:";
+            cin >> num2;
+
+            cout << "\nAnswer:\n";
+            cout << "Sum: " << num1 + num2 << endl;
+            cout << "Difference: " << num1 - num2 << endl;
+            cout << "Product: " << num1 * num2 << endl;
+            cout << "Quotient: " << num1 / num2 << endl; 
+            cout << "Modulo: " << num1 % num2 << endl;
+            break;
+            
+        case 3:
+            cout << "Enter first number:" << endl;
+            cin >> x;
+            cout << "Enter the second number:" << endl;
+            cin >> y;
+    
+            cout << "\nResults\n" << endl;
+            cout << "bitwise and" << endl;
+            cout << (x & y) << endl;
+            cout << "bitwise or" << endl;
+            cout << (x | y) << endl;
+            break;
+            
+        case 4:
+            cout << "Enter a score" << endl;
+            cin >> num;
+            
+            if (num>=90) {
+                cout << "Excellent! Keep up the amazing work!" << endl;
+            } else if (num >= 80) {
+                cout << "Great job! You're doing really well!" << endl;
+            }else if (num >= 70) {
+                cout << "Great effort! Keep pushing and you'll improve even more!" << endl;
+            } else if (num >= 60) { 
+                cout << "Don't give up! There's room to grow, so keep working hard!" << endl;
+            } else {
+                cout << "Don't give up! Review your work and try again - you've got this!" << endl;
+            }
+            break;   
+                
+        case 5:
+            cout << "Enter the number:";
+            cin >> num1;
+
+            if (num1 > 0) {
+                cout << "Positive Number" << endl;
+            } else if (num1 < 0) {
+                cout << "Negative Number" << endl;
+            } else {
+                cout << "Zero" << endl;
+            }
+            break;
+            
+        case 6:
+           cout << "Enter current Temperature" << endl;
+           cin >> temperature;
+           cout << "It is raining (yes/no)?" << endl;
+           cin >> raining;
+    
+           if (temperature <= 15){
+    
+                if (raining== "yes") {
+                    cout << "Wear a warm, waterproof jacket"<< endl;
+                }
+                else {
+                    cout << "Wear warm sweater" << endl;
+                }
+           }    
+           else if (temperature <= 25) {
+    
+                if (raining=="yes") {
+                    cout << "Wear a light raincoat " << endl;
+                }
+                else {
+                    cout << "Wear a comporta t-shirt and pants" << endl;
+                }
+           }   
+           else {
+      
+                if (raining=="yes"){
+                    cout << "Wear a light jacket" << endl;
+                }    
+                else {
+                    cout << "Wear a shorts and t-shirt" << endl;
+                }
+           }       
+            
+            
+        case 7:
+            cout << "Enter number (1-2 (1st and 2nd activity))" << endl;
+            cin >> choice;
+            
+            switch (choice){
+            
+            case 1:
+                cout << "\"1st activity, switch statement\"" << endl;
+                cout << "Enter number (1-7)" << endl;
+                cin >> num;
+    
+               switch (num) {
+        
+               case 1:
+                    cout << "It's monday" << endl;
+               break;
+        
+               case 2:
+                    cout << "It's Tuesday" << endl;
+               break;
+        
+               case 3:
+                    cout << "It's Wednesday" << endl;
+               break;
+        
+               case 4:
+                    cout << "It's Thursday" << endl;
+               break;
+        
+               case 5:
+                    cout << "It's Friday" << endl;
+               break;
+        
+               case 6:
+                    cout << "It's Saturday" << endl;
+               break;
+        
+               case 7:
+                    cout << "It's Sunday" << endl;
+               break;
+                
+               default:
+                    cout << "Invalid choice! Please select from the menu." << endl;
+               break;
+                
+               }
+               break;
+            
+               case 2: 
+                  cout << "\"2nd activity, Switch statement\"" << endl;
+                  cout << "\"MENU\"" << endl;
+                  cout << "1. Start the game" << endl;
+                  cout << "2. Load the game" << endl;
+                  cout << "3. Settings" << endl;
+                  cout << "4. Exit" << endl;
+    
+                  cout << "Enter your choice:" << endl;
+                  cin >> choice;
+    
+                  switch (choice) {
+    
+                     case 1:
+                       cout << "Starting the game..." << endl;
+                     break; 
+        
+                     case 2:
+                        cout << "Loading the game..." << endl;
+                     break;    
+        
+                     case 3:
+                        cout << "Settings" << endl;
+                     break;
+        
+                     case 4: 
+                         cout << "Exiting the game..." << endl;    
+                     break;
+                        
+                     default:
+                         cout << "Invalid choice! Please select from the menu." << endl;
+                     break;
+                     }
+                     break;
+                        
+                     default:
+                         cout << "Invalid input" << endl;
+                     break;
+            }
+            break;
+            
+            case 8:
+                while (a > 0) { 
+                    cout << "Countdown " << a << endl;
+                    a--;
+                }
+                break;
+                
+            case 9:
+                cout << "Enter numbers (enter a non-positive number to stop)" << endl;
+
+                while (true) {
+                    cout << "Enter Number:" << endl;
+                    cin >> num;
+                    if (num <= 0) {
+                     break;
+                    }
+                    sum += num;
+                }
+
+                  cout << "The sum of positive numbers is: " << sum << endl;
+                  
+                  break;
+                  
+            case 10:
+            
+               for (int i = 0; i < 10; ++i) {
+                    cout << "Hello, World!" << name << endl;
+               }     
+                   break;
+                   
+            case 11:
+                cout << "Enter a negative number to stop" << endl;
+
+                do {
+                    cout << "Enter numbers :\n";
+                    cin >> num;
+                    
+                    sum += (num > 0) ? num : 0;
+                    
+                } while (num >= 0);
+
+                    cout << "Sum of positive numbers: " << sum << endl;
+                    
+                    break;
+                    
+            default:
+               cout << "Invalid Input" << endl;
+                
+    }
+
+    return 0;
+}
