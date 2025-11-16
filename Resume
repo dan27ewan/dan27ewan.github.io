@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel S. Teoxon - Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="Profile">
+      <img src="Teoxon.PNG" alt="Daniel S. Teoxon" height="100px" width="100px">
+    <h1><mark>Daniel S. Teoxon</mark></h1>
+    <p><i>Aspiring Web Developer</i></p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="section">
+    <h2>Welcome</h2>
+    <p>Hi, I’m <i><b>Daniel Teoxon</b></i>, from <i><b>BSIT-2D</b></i>. A motivated learner passionate about technology, eager to grow and contribute as a web developer.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p><b>Age:</b> 19 years old</p>
+    <p><b>Birthday:</b> November 27, 2005</p>
+    <p><b>Birthplace:</b> Kinalansan San Jose, Camarines Sur</p>
+    <p><b>Address:</b> Blk 202 Lot 19 Southville 8B Phase 4 San Isidro Rodriguez Rizal</p>
+  </section>
+  
+<!--education-->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>San Isidro Elementary School</li>
+      <li>Southville 8B National High School</li>
+      <li>Southville 8B Senior High School</li>
+      <li>Colegio De Montalban</li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Time Management</li>
+      <li>Teamwork</li>
+      <li>Critical Thinking</li>
+      <li>Problem Solving</li>
+      <li>Adaptability</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>📞<i>09633308211</i></p>
+    <p>📧 <i>danielteoxon89@gmail.com</i></p>
+    <p>📍 Rodriguez, Rizal, Philippines</p>
+  </section>
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Daniel S. Teoxon. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+<style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background: #1a73e8;
+  color: white;
+  padding: 20px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header .Profile {
+  text-align: center;
+}
+
+header img {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  background: white;
+  color: #1a73e8;
+}
+
+/* SECTIONS */
+.section {
+  background: white;
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 850px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  padding: 5px 0;
+}
+
+/* CONTACT ICONS */
+#contact p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+  background: #1a73e8;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 14px;
+}
+</style>
